@@ -129,18 +129,5 @@ def main():
 
     print('Welcome to the Hangman Game!')
     hangman(words)
-    print('Do you wish to play again? (yes/no): ')
-    cont = input().lower()
-    while cont != 'yes' and cont != 'no':
-        print('Do you wish to play again? (yes/no): ')
-        cont = input().lower()
-
-    while cont == 'yes':
-        hangman(words)
-        print('Do you wish to play again? (yes/no): ')
-        cont = input().lower()
-        while cont != 'yes' and cont != 'no':
-            print('Do you wish to play again? (yes/no): ')
-            cont = input().lower()
 
 main()
